@@ -21,6 +21,7 @@ public class TestController {
 		Enumeration<String>  e =  request.getParameterNames();
 		String key="";
 		String value ="";
+		//循环遍历
 		while(e.hasMoreElements()){
 			key = (String) e.nextElement();
 			value = request.getParameter(key);
