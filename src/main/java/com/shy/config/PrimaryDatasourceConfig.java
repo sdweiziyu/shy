@@ -21,7 +21,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * 项目名称：platform-weixin-selfInterface   
  * 类名称：PrimaryDatasourceConfig   
  * 类描述：   
- * 创建人：yuansheng   
+ * 创建人：weizy   
  * 创建时间：2016年7月5日 下午3:14:23     
  * @version    
  *    

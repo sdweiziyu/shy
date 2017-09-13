@@ -19,7 +19,7 @@ import com.shy.util.StringUtil;
 
 
 
-@WebFilter(filterName="loginFilter",urlPatterns="/login/*")
+@WebFilter(filterName="loginFilter",urlPatterns="*")
 public class loginFilter implements Filter{
 	private static final Logger logger = LoggerFactory.getLogger(loginFilter.class);
 	@Override

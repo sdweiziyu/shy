@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>操作界面</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  	<!-- Ionicons -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+ 	<link rel="stylesheet" href="/dist/css/AdminLTE.min.css">
+  	<!-- AdminLTE Skins. Choose a skin from the css/skins
+  	     folder instead of downloading all of them to reduce the load. -->
+ 	<link rel="stylesheet" href="/dist/css/skins/_all-skins.min.css">
+ 	<link rel="stylesheet" href="/plugins/h-ui.admin/css/H-ui.admin.css">
+ 	
+    
+  </head>
+
+<body class="hold-transition skin-blue sidebar-mini">	
+ <div class="wrapper">
+  <header class="main-header">
+   	<!-- Logo -->
+	<a href="index2.html" class="logo"> 
+	  <span class="logo-mini">
+	     <img alt="" src="/dist/img/avatar5.png" width="40px" height="40px">
+	  </span>
+	  <span class="logo-lg">XXXX后台管理系统</span>
+	</a>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top" role="navigation">
+	     <!-- Sidebar toggle button-->
+	     <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+	        <span class="sr-only">Toggle navigation</span>
+	     </a>
+	   <!-- Navbar Right Menu -->
+	   <div class="navbar-custom-menu">
+	      <ul class="nav navbar-nav">
+	      <!-- User Account: -->
+	      <li class="dropdown user user-menu">
+	           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	              <img src="/dist/img/avatar5.png" class="user-image" alt="User Image">
+	              <span class="hidden-xs">${user.userName}</span>
+	           </a>
+	           <ul class="dropdown-menu">
+	               <!-- User image -->
+	               <li class="user-header">
+	                  <img id="user-header" src="/dist/img/avatar5.png" class="img-circle" alt="User Image">
+	                  <p>${user.userName}</p>
+	              </li>
+	              <!--Menu Body 
+	              <li class="user-body"> 
+	                  <div class="col-xs-4 text-center"> 
+	                       <a href="#">Followers</a> 
+	                  </div> 
+	                  <div class="col-xs-4 text-center"> 
+	                       <a href="#">Sales</a> 
+	                  </div> 
+	                  <div class="col-xs-4 text-center"> 
+	                       <a href="#">Friends</a> 
+	                  </div> 
+	              </li>-->
+	              <!-- Menu Footer-->
+	              <li class="user-footer">
+	                  <div class="pull-left">
+	                      <a id="systemsettingBtn" href="javascript:void(0)" class="btn btn-default btn-flat">修改密码</a>
+	                  </div>
+	                  <div class="pull-right">
+	                      <a href="/loginOut" class="btn btn-default btn-flat">注销</a>
+	                  </div>
+	              </li>
+	           </ul>
+	       </li>
+	      </ul>
+	   </div>
+	  </nav>
+</header>
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">导航</li>
+        <li>
+          <a data-href="/login" href="javascript:void(0)" data-title="首页">
+            <i class="fa fa-dashboard"></i> <span>首页</span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-wrench"></i>
+            <span>设置</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="chartjs.html"><i class="fa fa-circle-o"></i> 人员管理</a></li>
+            <li class="active"><a href="morris.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </aside>
+<section class="content-wrapper">
+</section>
+</div>
+<!-- jQuery 2.2.3 -->
+<script src="/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/dist/js/app.min.js"></script>
+<script src="/plugins/h-ui/js/H-ui.min.js"></script>
+<script src="/plugins/h-ui.admin/js/H-ui.admin.js"></script>
+
+</body>
+</html>
